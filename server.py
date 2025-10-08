@@ -19,8 +19,6 @@ from mcp.types import (
     ListToolsResult,
     Tool,
     TextContent,
-    NotificationOptions,
-    ExperimentalCapabilities,
 )
 
 # Create server instance
@@ -90,8 +88,8 @@ async def main():
                 server_name="indra-variants",
                 server_version="1.0.0",
                 capabilities=server.get_capabilities(
-                    notification_options=NotificationOptions(),
-                    experimental_capabilities=ExperimentalCapabilities(),
+                    notification_options=None,
+                    experimental_capabilities=None,
                 ),
             ),
         )
